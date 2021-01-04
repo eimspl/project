@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
-//@SpringBootApplication
 
 @Getter
 @AllArgsConstructor
