@@ -6,20 +6,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class TasksApplication extends SpringBootServletInitializer {
+//public class TasksApplication extends SpringBootServletInitializer {
+public class TasksApplication {
 	public static void main(String[] args) {
-	/*	TaskDto taskDto = new TaskDto((long)1, "test tealte","I want to be a order");
-		Long id = taskDto.getId();
-		String title = taskDto.getTitle();
-		String content = taskDto.getContent();
-
-		System.out.println(id + " " + title + " " + content);
-	*/
-
 		SpringApplication.run(TasksApplication.class, args);
 	}
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(TasksApplication.class);
-	}
+	//@Override
+	//protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+	//	return application.sources(TasksApplication.class);
+	//}
 }

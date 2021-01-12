@@ -2,7 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.4.1'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
-	id 'war'
+	//id 'war' //wyłączenie war do celów heroku
 }
 apply plugin: 'io.spring.dependency-management'
 group = 'com.crud'
@@ -19,9 +19,10 @@ dependencies {
 	compile('org.projectlombok:lombok')
 	annotationProcessor('org.projectlombok:lombok')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('mysql:mysql-connector-java')
+	//compile('mysql:mysql-connector-java') //wyłączenie mysql do celów heroku
+	compile('org.postgresql:postgresql') //kompilujemy do postgre dla heroku
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
+	//providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 
 }
 
