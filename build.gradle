@@ -21,8 +21,8 @@ dependencies {
 	compile('org.projectlombok:lombok')
 	annotationProcessor('org.projectlombok:lombok')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('mysql:mysql-connector-java') //wyłączenie mysql do celów heroku
-	//compile('org.postgresql:postgresql') //kompilujemy do postgre dla heroku
+	//compile('mysql:mysql-connector-java') //wyłączenie mysql do celów heroku
+	compile('org.postgresql:postgresql') //kompilujemy do postgre dla heroku
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	//providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 
