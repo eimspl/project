@@ -26,7 +26,7 @@ public class EmailScheduler {
     @Scheduled(fixedDelay = 10000)
     public void sendInformationEmail(){
         long size = taskRepository.count();
-        String numberOfTask = (taskRepository.count() > 1) ? " tasks" : " task";
+        String numberOfTask = (size > 1) ? "tasks" : "task";
         simpleEmailService.send(new Mail(
                 adminConfig.getAdminMail(),
                 SUBJECT,
