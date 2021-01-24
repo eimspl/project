@@ -25,4 +25,3 @@ public class CreatedTrelloCard {
     //private Badges badges;
 
 }
-
